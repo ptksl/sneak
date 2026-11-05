@@ -1,0 +1,134 @@
+{
+  "bg/0": {
+    "light": "#FFFFFF",
+    "dark": "#07080A"
+  },
+  "bg/1": {
+    "light": "#F6F5FF",
+    "dark": "#0F1013"
+  },
+  "bg/2": {
+    "light": "#EEECFF",
+    "dark": "#16171B"
+  },
+  "bg/3": {
+    "light": "#E2DEFF",
+    "dark": "#1E2025"
+  },
+  "line/default": {
+    "light": "#E2DEFA",
+    "dark": "#26282E"
+  },
+  "line/strong": {
+    "light": "#C3BCF2",
+    "dark": "#3A3D45"
+  },
+  "text/primary": {
+    "light": "#2B1C9E",
+    "dark": "#F3F3EF"
+  },
+  "text/secondary": {
+    "light": "#6E6A80",
+    "dark": "#8C9099"
+  },
+  "text/tertiary": {
+    "light": "#A3A0B3",
+    "dark": "#5A5E66"
+  },
+  "text/inverse": {
+    "light": "#120B4A",
+    "dark": "#07080A"
+  },
+  "brand/primary": {
+    "light": "#00A847",
+    "dark": "#0CE662"
+  },
+  "signal/secured": {
+    "light": "alias",
+    "dark": "alias"
+  },
+  "signal/live": {
+    "light": "#D98200",
+    "dark": "#FFB020"
+  },
+  "signal/kill": {
+    "light": "#E0262B",
+    "dark": "#FF3B3B"
+  },
+  "signal/purge": {
+    "light": "#8B2BE2",
+    "dark": "#B44DFF"
+  },
+  "signal/vendetta": {
+    "light": "#4B3BD9",
+    "dark": "#8B7CFF"
+  },
+  "paper/evidence": {
+    "light": "#F4EEDD",
+    "dark": "#ECE6D6"
+  },
+  "accent/urgent": {
+    "light": "#F0490B",
+    "dark": "#FF5A1F"
+  },
+  "accent/urgent-soft": {
+    "light": "#FF7A3D",
+    "dark": "#FF9A5C"
+  },
+  "tint/secured": {
+    "light": "#00A8471F",
+    "dark": "#0CE6621F"
+  },
+  "tint/secured-line": {
+    "light": "#00A84773",
+    "dark": "#0CE66273"
+  },
+  "tint/live": {
+    "light": "#D982001F",
+    "dark": "#FFB0201F"
+  },
+  "tint/live-line": {
+    "light": "#D9820073",
+    "dark": "#FFB02073"
+  },
+  "tint/kill": {
+    "light": "#E0262B1F",
+    "dark": "#FF3B3B1F"
+  },
+  "tint/kill-line": {
+    "light": "#E0262B73",
+    "dark": "#FF3B3B73"
+  },
+  "tint/urgent": {
+    "light": "#F0490B1F",
+    "dark": "#FF5A1F1F"
+  },
+  "tint/urgent-line": {
+    "light": "#F0490B73",
+    "dark": "#FF5A1F73"
+  },
+  "tint/purge": {
+    "light": "#8B2BE21F",
+    "dark": "#B44DFF1F"
+  },
+  "tint/purge-line": {
+    "light": "#8B2BE273",
+    "dark": "#B44DFF73"
+  },
+  "tint/neutral": {
+    "light": "#6E6A801F",
+    "dark": "#8C90991F"
+  },
+  "tint/neutral-line": {
+    "light": "#6E6A8073",
+    "dark": "#8C909973"
+  },
+  "tint/vendetta": {
+    "light": "#4B3BD91F",
+    "dark": "#8B7CFF1F"
+  },
+  "tint/vendetta-line": {
+    "light": "#4B3BD973",
+    "dark": "#8B7CFF73"
+  }
+}
