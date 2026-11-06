@@ -71,8 +71,9 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 2. Add power-ups.
 3. Optional guess at what they're doing, for 2× points.
 4. Record permission.
-5. Pick a filter (None, Fisheye, Clown or Thermal), only if no default is set. "Use this for every sneak" saves it as the default in Profile.
+5. Pick a filter (None, Fisheye, Clown or Thermal), only if no default is set. "Use this for every sneak" saves it as the default in Profile. From then on this step doesn't appear.
 6. It rings for 10 seconds. The countdown is on the top half and the caller's camera on the bottom. The filter can still be changed here for this sneak. It previews on the caller's video and lands on the receiver at pick-up.
+7. During the duel, the caller can change the filter with the 🎭 button (07c). The receiver doesn't get this button.
 
 ### Duels
 
@@ -100,7 +101,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 ### Invites
 
-An invite never rings, because one person can have many invites running at once. The Ambush SMS starts a 5-minute timer. Finish the account in time and you survive (B07). Miss it and you got hit (B08b).
+An invite never rings, because one person can have many invites running at once. The Ambush SMS starts a 5-minute timer. Finish the account in time and you survive (B07). Miss it and you get hit (B08b).
 
 ## Not decided yet
 
@@ -116,6 +117,8 @@ Check with design before building these.
 | Is removing someone silent and two-way? | 12h | Yes to both |
 | Does removing someone cancel a running Vendetta? | 12h | Not defined |
 | Does a default filter keep costing 3 points per sneak? | C08, S01 | Yes, and None if you can't afford it |
+| Who confirms a typed Other… guess? | C06b | Not drawn. It can't be matched automatically |
+| What does changing the filter during a duel cost? | 07c | Nothing extra once paid on that sneak. If none was added, 3 points or first one free |
 | Does a closed beta need a screen for entering a beta code? | Sign-up | Not drawn |
 | Does surviving an invite earn points, and does the inviter get +10 for a hit? | B07, B08b | No points for surviving, +10 for the inviter |
 | What happens when the decision timer on the post screen reaches zero? | 08 | Not defined |

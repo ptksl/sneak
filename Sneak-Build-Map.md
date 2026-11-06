@@ -96,6 +96,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | Screen | ID | Note | Uses |
 |---|---|---|---|
 | C06 Caller · guess before ringing | `101:488` | `104:747` | Chip, Button |
+| C06b Caller · guess, Other | `292:1398` | `292:1416` | Chip, Input, Button, System / Keyboard |
 | C01 Caller · record permission | `101:248` | `104:696` | Avatar, Chip, Button, Dialog |
 | C08 Caller · pick a filter | `268:1058` | `268:1076` | Video / Placeholder, Chip, Toggle, Button |
 | C02 Caller · ringing | `101:219` | `104:688` | Video / Placeholder, Chip, Button |
@@ -115,6 +116,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 06 Incoming Sneak | `7:164` | `13:349` | Status Tag, Avatar |
 | 07a Duel starting | `162:695` | `172:1052` | Video / Placeholder, Status Tag |
 | 07 Live Duel | `7:208` | `13:367` | Video / Placeholder, Status Tag |
+| 07c Live Duel · change filter | `292:1329` | `292:1353` | Video / Placeholder, Chip |
 | 07b Live Duel · not recording | `162:740` | `172:1060` | Video / Placeholder |
 | 08 Post Consent | `7:253` | `13:385` | Video / Placeholder, Avatar, Status Tag, Button |
 | 08b Duel replay | `268:1117` | `268:1141` | Video / Placeholder |
@@ -196,11 +198,12 @@ A12 Allow and continue→ A13 if someone accepted · otherwise 11d
 A13 Sneak Maya→ A13a (C06)
 
 Caller
-C06 Lock in guess / Skip, just ring→ C01
+C06 Lock in guess / Skip, just ring→ C01 · Other…→ C06b · C06b Lock in guess→ C01
 C01 Allow & sneak→ C08 · Continue without recording→ A14 (no recording)
 C08 Continue / No filter→ A14
 A14 auto→ 07a · Cancel sneak→ A13
 07a auto→ 07 · 07 call ends→ 08
+07 🎭 (caller only)→ 07c · 07c 🎭→ 07
 08 Replay duel→ 08b · 08b Back→ 08
 A14 (no recording) auto→ 07a (no recording) auto→ 07b · 07b call ends→ 11
 08 Post it→ 11 · Keep private→ 11c
@@ -231,7 +234,7 @@ B07 / B08b → B10 → B12 (or B12b) → B06 → B13 → B13a → B13b → B13c 
 Main app
 11 Save→ 11b · 11b Save to Photos / Share to Reels / TikTok→ 11
 11c Post it→ 11
-S01 Sneak Maya→ C06 · Cancel→ 11
+S01 Sneak Maya→ C06 → C01 → C02 (no filter step, default already on) · Cancel→ 11
 13 Shield→ 13b · 13b auto→ 13
 12 Trophy shelf→ 12e · Do not disturb→ 12d · 12e Profile→ 12
 12d Do not disturb→ 12 · Trophy shelf→ 12e · Add a window→ 12b

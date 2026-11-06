@@ -8,13 +8,13 @@
 
 - **Closed beta:** launch uses beta codes, so the waitlist map is archived. Whether sign-up needs a code screen isn't decided.
 - **Scouting:** removed.
-- **Invites never ring:** the Ambush SMS starts a 5-minute timer. Make an account in time and you survived; miss it and you got hit. One person can have many invites running, so it can't be a real call.
+- **Invites never ring:** the Ambush SMS starts a 5-minute timer. Make an account in time and you survived; miss it and you get hit. One person can have many invites running, so it can't be a real call.
 - **Radar limit:** up to 10 friends, replacing the doc's 3 invites a week. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
 - **No acceptances yet:** a new user skips First sneak and waits in the Arena until someone accepts. This replaces the doc's rule that users never see an empty feed.
 - **Full radar:** at 10 of 10 you must remove someone before accepting a request.
 - **Tone:** Sneak should feel like a closed, exclusive space for your closest friends. Copy can use emoji to help ("10 spots. Choose wisely 👀").
 - **Radar screen:** in Profile, for answering requests, removing friends and adding more.
-- **Default filter:** set once on the first sneak or in Profile, so people don't pick every time. It can still be changed while ringing.
+- **Default filter:** set once on the first sneak or in Profile, so later sneaks skip that step. It can still be changed while ringing, and by the caller during the duel.
 - **Replay:** opens the duel full screen with a back button.
 - **Copy:** "Look alive." uses the italic Wink style. Losing reads "you got hit".
 
@@ -131,7 +131,7 @@ The idea is to frame posting as **comedic evidence, a game mechanic, or retaliat
 6. **Duel scoring can go negative.** Upvotes are the only reward, while declining to post costs 10. An unanswered call pays +10 for certain, so callers may prefer the receiver *not* answer. Check that the incentives point where you want.
 7. **Silent hits.** Should a hit count when the phone is off, there's no signal, or the user is driving, beyond what DND covers?
 8. **Ephemerality conflicts (resolved: 24h in-app, downloadable with a branding hook).** Duels are deleted after 24h, yet the doc also proposes exports to TikTok, Crime Scene cards, yearbooks, a persistent trophy room, and scouting data. Decide what is ephemeral and what persists. That decision shapes the whole brand promise.
-9. **The 5-minute Ambush SMS (resolved).** Make an account in time and you survived; miss it and you got hit. Nothing rings.
+9. **The 5-minute Ambush SMS (resolved).** Make an account in time and you survived; miss it and you get hit. Nothing rings.
 
 **Trust, safety, and policy risks (these affect brand and UI directly)**
 - **Violent lexicon** (kill, hitlist, targets, hunted, crosshairs, bounty, "First Blood") with **high school and Gen Alpha** listed as audiences. This is a likely App Store review problem, could alarm schools and parents, and could cause real panic on campus. Stickers saying "You're being hunted" could be reported as threats. Consider a playful-spy or prank lexicon (*ambush, tag, caught, gotcha, evidence, case file*) that keeps the tension without weapons.
