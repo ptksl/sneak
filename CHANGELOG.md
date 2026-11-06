@@ -13,6 +13,7 @@ Figma review log: node `274:13`.
 - **C08 Pick a filter:** shown until a default filter is set.
 - **Default filter:** a new setting in Profile, so people don't choose every time.
 - **A13a to A13c and B13a to B13c:** guess for 2× points, recording permission and filter, straight after First sneak.
+- **11d Arena · waiting:** where a new user waits if nobody has accepted yet. Someone accepting opens First sneak.
 - **B07 You survived:** shown when an invited person finishes their account in time.
 - **Push notifications:** a list of 39 in `NOTIFICATIONS.md` and on the Read Me page.
 - **10-friend cap:** explained on the invite screen, and shown as "4 of 10" in Profile. It replaces the 3 invites a week.

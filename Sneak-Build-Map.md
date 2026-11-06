@@ -127,6 +127,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 11 Arena | `8:171` | `13:440` | Video / Placeholder, Status Tag, Chip, Arena Card, Avatar, Tab Bar |
 | 11b Save duel (9:16) | `104:441` | `104:766` | Video / Placeholder, Logo / Lockup — Horizontal, Button |
 | 11c Duels | `137:531` | `137:860` | Video / Placeholder, Status Tag, Button, Tab Bar |
+| 11d Arena · waiting | `280:1149` | `280:1195` | Callout, Contact Row, Button, Tab Bar |
 | S01 New sneak | `137:645` | `137:871` | Input, Contact Row, Chip, Button |
 | 12 Profile | `104:484` | `13:458` | Avatar, Artifact Tag, Button, Chip, Artifact / Hero, Toggle, Tab Bar |
 | 12b Do not disturb · new window | `104:613` | `104:774` | Input, Chip, Button |
@@ -185,7 +186,9 @@ A01 Get started→ A02 · I already have an account→ L01
 A02 Continue→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
 A05 Send code→ A06 · A06 Verify→ A07 · A07 Continue→ A09
 A09 Sync contacts→ A11 · Add numbers manually→ A11b→ A12
-A11 Continue→ A12 · A12 Allow and continue→ A13
+A11 Continue→ A12
+A12 Allow and continue→ A13 if someone accepted · otherwise 11d
+11d Add more friends→ A11 · someone accepts (N34)→ A13
 A13 Sneak Maya→ A13a (C06)
 
 Caller
@@ -232,7 +235,7 @@ S01 Sneak Maya→ C06 · Cancel→ 11
 12c Trophy shelf→ 12e
 ```
 
-**In Figma but not in the prototype:** A04b, A09, A11b, all of B, and R04. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
+**In Figma but not in the prototype:** A04b, A09, A11b, 11d, all of B, and R04. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
 
 **Later sneaks skip C08** once a default filter is set. The steps become S01 → C06 → C01 → C02.
 

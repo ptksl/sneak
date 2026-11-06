@@ -64,7 +64,7 @@ Every push the flows need, as of 6 Nov 2026. Figma has the same list on the Read
 | # | Event | Who gets it | Copy | Opens | When |
 |---|---|---|---|---|---|
 | N33 | Radar request | Person added | Jay wants you on their radar. | R04 | Beta |
-| N34 | Request accepted | Person who asked | Rhea accepted. You can sneak them now. | S01 | Beta |
+| N34 | Request accepted | Person who asked | Rhea accepted. You can sneak them now. | A13 for a first sneak, otherwise S01 | Beta |
 | N35 | Invited friend joined | Inviter | Jay joined Sneak and is on your radar. | S01 | Beta |
 | N36 | Invited friend survived | Inviter | Jay made it in time and survived. | S01 | Beta |
 | N37 | Invite timer ran out | Inviter | Time's up. Jay didn't make it, so you scored. | 11 | Beta |
