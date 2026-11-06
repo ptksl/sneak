@@ -11,6 +11,8 @@ This repo holds everything needed to build the app from the designs. The Xcode p
 | [DESIGN-HANDOFF.md](DESIGN-HANDOFF.md) | Start here: what to build, in what order, and what's still undecided |
 | [Sneak-Build-Map.md](Sneak-Build-Map.md) | Every screen's Figma node ID, its components, and the navigation |
 | [Sneak-Brief-Summary.md](Sneak-Brief-Summary.md) | Product rules and decisions |
+| [NOTIFICATIONS.md](NOTIFICATIONS.md) | Every push notification, with draft copy |
+| [CHANGELOG.md](CHANGELOG.md) | What changed in the designs and docs, newest first |
 | [Sneak-Brand-Assets/](Sneak-Brand-Assets/) | Logos, app icons, artifacts, fonts and colour tokens |
 | [CLAUDE.md](CLAUDE.md) | Loaded automatically by Claude Code, and points it to the files above |
 
@@ -26,6 +28,6 @@ Designs are in [Figma](https://www.figma.com/design/YPJMBELCIik1hbaE8RnDBn/Sneak
 
 ## Keeping things in sync
 
-The Figma file is the source of truth for design. The build map and exported assets are snapshots of it, so when a screen is added or changed, update them in the same commit as the work.
+The Figma file is the source of truth for design. The build map and exported assets are snapshots of it, so when a screen is added or changed, update them and [CHANGELOG.md](CHANGELOG.md) in the same commit as the work.
 
 This repo is private because Sneak is unreleased.

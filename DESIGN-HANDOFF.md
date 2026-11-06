@@ -1,6 +1,6 @@
 # Sneak design handoff
 
-For whoever is building the iOS app. Screen IDs and navigation are in [Sneak-Build-Map.md](Sneak-Build-Map.md). This document covers what the map can't: how to read the designs, which rules apply, and what isn't decided.
+For whoever is building the iOS app. Screen IDs and navigation are in [Sneak-Build-Map.md](Sneak-Build-Map.md), and push notifications are in [NOTIFICATIONS.md](NOTIFICATIONS.md). This document covers what the map can't: how to read the designs, which rules apply, and what isn't decided.
 
 ## Which source wins
 
@@ -23,6 +23,7 @@ Several ideas in the original doc have been overturned, so don't build from sect
 - **Colour and type:** use the tokens and text styles rather than values read off a frame. Colours are in `Sneak-Brand-Assets/colours.json`.
 - **Dark mode:** not redrawn. It's the same screens with the Dark token values, following the phone's setting. Call screens stay black in both modes.
 - **Page 05 and page 06:** copies of other screens. Build from the originals.
+- **Page 99:** removed screens, including Scouting and the waitlist. Don't build them.
 - **Prototype triggers:** "auto" steps and taps on a whole screen stand in for real events, such as a timer ending or the other person answering.
 
 ## Suggested build order
@@ -36,8 +37,9 @@ This is a suggestion, not a design requirement.
 5. **Main tabs:** Arena, Duels, Armory, Profile
 6. **Invited flow:** B, which mostly reuses earlier screens
 7. **Exports and sharing:** the 9:16 download and the page 03 artefacts
+8. **Push notifications:** alongside each flow, using [NOTIFICATIONS.md](NOTIFICATIONS.md)
 
-Flow B repeats much of flow A and the core loop, with an Invite Timer Banner on its sign-up steps. For example, B02 is A02 with the banner, and B07 and B08 come from 06 and 07. Share one view with options rather than building each one twice.
+Flow B repeats much of flow A, with an Invite Timer Banner on its sign-up steps. For example, B02 is A02 with the banner. The setup steps A13a to A13c and B13a to B13c are the same screens as C06, C01 and C08. Share one view with options rather than building each one twice.
 
 ## Rules to build
 
@@ -50,7 +52,8 @@ Flow B repeats much of flow A and the core loop, with an Invite Timer Banner on 
 | First hit | Free, shown as "Immunity" |
 | Duel: picked up and talked 10s to 60s | Each person gets their own upvotes, 1 point per vote |
 | Keeping a duel private | Free |
-| Right guess before ringing | Doubles the caller's points and creates a "caught out" post |
+| Invite timer ends before the account is finished | Invited person got hit, with the first hit free |
+| Right guess before ringing | 2× points for the caller, and creates a "caught out" post |
 | Vendetta: 24h after being killed | Revenge kill pays ×2 |
 | Purge: a random 15-minute window each day | ×3 |
 | Dueling or killing the Most Wanted | 30 |
@@ -65,10 +68,10 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 1. Pick one person. There are no group sneaks.
 2. Add power-ups.
-3. Optional guess at what they're doing.
+3. Optional guess at what they're doing, for 2× points.
 4. Record permission.
-5. It rings for 10 seconds. The countdown is on the top half and the caller's camera on the bottom.
-6. If the Filters power-up is on, the caller picks None, Fisheye, Clown or Thermal while ringing. It previews on their video and lands on the receiver at pick-up.
+5. Pick a filter (None, Fisheye, Clown or Thermal), only if no default is set. "Use this for every sneak" saves it as the default in Profile.
+6. It rings for 10 seconds. The countdown is on the top half and the caller's camera on the bottom. The filter can still be changed here for this sneak. It previews on the caller's video and lands on the receiver at pick-up.
 
 ### Duels
 
@@ -76,6 +79,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - **Start:** a "Duel starts in 10s" countdown runs first. After that, the only tag is REC, if recording.
 - **Recording:** the caller allows it before the ring, and the receiver right after picking up. Without it, the call still goes ahead, with no REC tag, no duel to post and no duel points.
 - **Receiver notice:** the incoming screen says their video shows as soon as they tap Duel.
+- **Replay:** Replay duel opens 08b full screen, with a back button to the post screen.
 - **Posting:** both say yes and it's posted to friends. Anyone says no and it stays in both people's Duels tab. Either way, it's deleted after 24 hours.
 
 ### Video shape
@@ -85,10 +89,15 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 ### Access and limits
 
-- Only people on your radar can sneak you. Radar means people you've invited, plus friends already on Sneak that you add. Contacts are never added automatically.
+- Only people on your radar can sneak you. Radar means people you've invited, plus friends on Sneak who accepted your request (R04). Contacts are never added automatically.
+- A radar holds up to 10 friends.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
 - Invites are limited to 3 per week.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
+
+### Invites
+
+An invite never rings, because one person can have many invites running at once. The Ambush SMS starts a 5-minute timer. Finish the account in time and you survive (B07). Miss it and you got hit (B08b).
 
 ## Not decided yet
 
@@ -98,14 +107,21 @@ Check with design before building these.
 
 | Question | Where it matters | Used in the designs for now |
 |---|---|---|
-| Does the Profile ringtone setting replace the Custom ringtone power-up? | 12, 13, 14, S01 | Both exist |
+| Does the Profile ringtone setting replace the Custom ringtone power-up? | 12, 13, S01 | Both exist |
+| Is the 10-friend cap on top of 3 invites a week, or instead of it? | A11, B12, 12 | Both exist |
+| Does joining from an invite count as accepting? | B10, B12 | Yes, the inviter is on your radar straight away |
+| What if nobody has accepted by First sneak? | A13, B13 | Not drawn |
+| Can you accept a request when your radar is full? | R04 | Not drawn |
+| Does a default filter keep costing 3 points per sneak? | C08, S01 | Yes, and None if you can't afford it |
+| Does a closed beta need a screen for entering a beta code? | Sign-up | Not drawn |
+| Does surviving an invite earn points, and does the inviter get +10 for a hit? | B07, B08b | No points for surviving, +10 for the inviter |
+| What happens when the decision timer on the post screen reaches zero? | 08 | Not defined |
 | Is the first filter free? | A14, B14 | Free, then 3 per use (a proposal) |
 | Does the filter land on the receiver or the caller? | Ringing, 06, 07 | Receiver, with the caller previewing it |
 | What shows when Filters wasn't added? | Ringing | Not drawn. The assumption is no picker |
 | Do Vendetta, Purge and Most Wanted stack? Whose Purge window counts, and is it visible? | Scoring | Not defined |
 | Does a duel end a Most Wanted run, or only a kill? | Most Wanted | Not defined |
 | Do hits count with the phone off, no signal or while driving? | Hit | Not defined |
-| What happens when the Ambush SMS's 5 minutes end? | B00, B01 | Not defined |
 
 ### Legal and App Store risks
 
@@ -115,7 +131,6 @@ These need a decision from someone other than the build team, and they could cha
 - **Recording:** consent laws vary by place, and recording minors adds risk.
 - **Filters:** one is applied to the receiver's face without them choosing it.
 - **SMS:** the Ambush SMS may fall under spam and telecom rules.
-- **Scouting:** the Scouting Sheet shows behaviour patterns, which raises a stalking concern.
 
 ### Design gaps
 

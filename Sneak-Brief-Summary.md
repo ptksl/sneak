@@ -4,7 +4,15 @@
 
 ---
 
-## Decisions so far (updated 4 Nov 2026)
+## Decisions so far (updated 6 Nov 2026)
+
+- **Closed beta:** launch uses beta codes, so the waitlist map is archived. Whether sign-up needs a code screen isn't decided.
+- **Scouting:** removed.
+- **Invites never ring:** the Ambush SMS starts a 5-minute timer. Make an account in time and you survived; miss it and you got hit. One person can have many invites running, so it can't be a real call.
+- **Radar limit:** up to 10 friends. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
+- **Default filter:** set once on the first sneak or in Profile, so people don't pick every time. It can still be changed while ringing.
+- **Replay:** opens the duel full screen with a back button.
+- **Copy:** "Look alive." uses the italic Wink style. Losing reads "you got hit".
 
 - **Name:** SNEAK stays.
 - **Logo:** Corner Peek mark (a rounded bracket corner with an eye peeking round it, plus a green dot) with SNEAK in Big Shoulders Display Black. It's also the middle Sneak button in the tab bar.
@@ -12,17 +20,17 @@
 - **Posting consent:** simple yes/no. Both yes: posted to your friends. Anyone says no: not posted, and it stays in both people's Duels tab. Either way it's deleted after 24 hours. Saying no is free. The preview has a big Replay button before you decide.
 - **Tabs:** Arena (posted duels), Duels (not posted), Sneak (logo; starts a new sneak), Armory, Profile.
 - **One person per sneak:** no group sneaks; the first sneak picks one person.
-- **Radar (was Watchlist):** everyone you've invited to Sneak. You get a notification when they join, and then you can sneak up on them. Friends already on Sneak can be added too. Contacts are never added automatically. Only people on your radar can sneak you, so it isn't a setting.
+- **Radar (was Watchlist):** up to 10 friends: everyone you've invited to Sneak, plus friends on Sneak who accept your request. You get a notification when they join or accept, and then you can sneak up on them. Contacts are never added automatically. Only people on your radar can sneak you, so it isn't a setting.
 - **Naming:** the feed is the **Arena**. **Kill** and **Hit** are kept from the doc (Gotcha/Slipped dropped). "Lair" is now **Profile**.
 - **Themes:** Light is the main design (indigo headlines, grey secondary text). Dark is a second mode on the same tokens, following the system setting. Call screens stay black.
 - **Duel / Hit:** the incoming buttons are labelled Duel (pick up) and Hit (reject). A Hit is −10, or −5 if the receiver gives a reason; the −5 is only explained on the reason screen. Before it rings, the caller can optionally guess what the person is doing; a right guess doubles their points and creates a "caught out" post ("Maya was in the shower when you sneaked on them").
-- **Sneak setup order:** pick a person, add power-ups, optional guess, record permission, then it rings.
-- **Ringing screen:** countdown on the top half and the caller's camera on the bottom, like the duel layout. The caller picks the filter here (None, Fisheye, Clown, Thermal). It previews on their video and lands on the receiver at pick-up. The first filter is free (a proposal, not yet confirmed).
+- **Sneak setup order:** pick a person, add power-ups, optional guess, record permission, filter if no default is set, then it rings.
+- **Ringing screen:** countdown on the top half and the caller's camera on the bottom, like the duel layout. Your filter (None, Fisheye, Clown, Thermal) is already on and can be changed here. It previews on their video and lands on the receiver at pick-up. The first filter is free (a proposal, not yet confirmed).
 - **Duel start:** a "Duel starts in 10s" countdown replaces the Duel Locked tag, on both the core and invited paths. After that, the only tag is REC, if recording.
 - **Recording permission:** the caller allows recording before the ring; the receiver allows it right after picking up. Continue without recording still goes ahead, with no REC tag, no duel to post and no duel points.
 - **Artifacts:** Kill is a skull in crosshairs, Hit an impact burst, Vendetta a dagger, Most Wanted a sheriff star, used on tags, Arena cards, result screens and trophies.
 - **Watermark:** white, on downloads only, with no options to set.
-- **Sign-in:** "I already have an account" goes number, code, welcome back, Arena. Invite friends is step 4 and Friends on Sneak step 5, with a progress bar from Invite through First sneak.
+- **Sign-in:** "I already have an account" goes number, code, welcome back, Arena. Add your friends is one step, combining invites and friends on Sneak, with a progress bar through First sneak.
 - **Power-ups (per use):** Incognito 5, Custom ringtone 3, Shield 5, Filters 3, Faster Sneak 5 (5-second ring). Applying one shows a toast.
 - **Blackbox audio:** removed.
 - **Vendetta:** its own indigo colour; Kill is green, Hit is red.
@@ -90,7 +98,7 @@ The idea is to frame posting as **comedic evidence, a game mechanic, or retaliat
 - **Streaks and survival chains.** Days without being killed, Most Wanted run length, revenge chains. Breaking someone's streak is a celebrated event, which makes people open the app defensively.
 - **Seasonal rule modifiers.** For example, "Silent Night" (vibration only), a "Double Agent" weekend (kills award points to a random friend), and campus events tied to real calendars.
 - **Personal "lair" or trophy room.** A persistent collection of masks, trophies, and wanted posters that grows with play, for showing off and arranging.
-- **Scouting.** Before a sneak, users can review a friend's activity pattern, DND windows, and reaction style (*"usually picks up after 4 seconds," "often in class 2–3"*).
+- **Scouting (removed 6 Nov 2026).** Before a sneak, users can review a friend's activity pattern, DND windows, and reaction style (*"usually picks up after 4 seconds," "often in class 2–3"*).
 
 ## 8. Go-to-market
 1. **Micro-launch: density over volume.** Aim for 500 users in one dorm or school, not 10,000 spread worldwide.
@@ -119,13 +127,12 @@ The idea is to frame posting as **comedic evidence, a game mechanic, or retaliat
 6. **Duel scoring can go negative.** Upvotes are the only reward, while declining to post costs 10. An unanswered call pays +10 for certain, so callers may prefer the receiver *not* answer. Check that the incentives point where you want.
 7. **Silent hits.** Should a hit count when the phone is off, there's no signal, or the user is driving, beyond what DND covers?
 8. **Ephemerality conflicts (resolved: 24h in-app, downloadable with a branding hook).** Duels are deleted after 24h, yet the doc also proposes exports to TikTok, Crime Scene cards, yearbooks, a persistent trophy room, and scouting data. Decide what is ephemeral and what persists. That decision shapes the whole brand promise.
-9. The Ambush SMS still says **[App Name]**, and the 5-minute deadline needs a defined outcome. Does a non-user really get a "kill on their record"?
+9. **The 5-minute Ambush SMS (resolved).** Make an account in time and you survived; miss it and you got hit. Nothing rings.
 
 **Trust, safety, and policy risks (these affect brand and UI directly)**
 - **Violent lexicon** (kill, hitlist, targets, hunted, crosshairs, bounty, "First Blood") with **high school and Gen Alpha** listed as audiences. This is a likely App Store review problem, could alarm schools and parents, and could cause real panic on campus. Stickers saying "You're being hunted" could be reported as threats. Consider a playful-spy or prank lexicon (*ambush, tag, caught, gotcha, evidence, case file*) that keeps the tension without weapons.
 - **Recording consent.** Both sides are recorded automatically, and two-party-consent laws apply in some places. AR filters are put on the receiver's face without their say. Recording **minors** adds more risk.
 - **Unsolicited SMS** may run into spam and telecom rules, and the 5-minute pressure reads as a dark pattern.
-- **Scouting data** ("often in class 2–3") is location and behavior profiling, which raises a stalking concern.
 - **Blackbox audio** captures people in bathrooms or in bed. Audio-only posting needs explicit opt-in.
 
 **Brand direction already implied by the doc**
