@@ -14,6 +14,7 @@ Figma review log: node `274:13`.
 - **Default filter:** a new setting in Profile, so people don't choose every time.
 - **A13a to A13c and B13a to B13c:** guess for 2× points, recording permission and filter, straight after First sneak.
 - **11d Arena · waiting:** where a new user waits if nobody has accepted yet. Someone accepting opens First sneak.
+- **12f Radar, 12g Add friends and 12h Remove from radar:** manage friends after sign-up, opened from the Radar row in Profile.
 - **B07 You survived:** shown when an invited person finishes their account in time.
 - **Push notifications:** a list of 39 in `NOTIFICATIONS.md` and on the Read Me page.
 - **10-friend cap:** explained on the invite screen, and shown as "4 of 10" in Profile. It replaces the 3 invites a week.
@@ -28,6 +29,7 @@ Figma review log: node `274:13`.
 - **You got hit:** replaces "hit" on A04b, B08b and screen 10. B08b was "Too late".
 - **A12 and B06:** new lines for camera, microphone and notifications.
 - **Ambush SMS, B01 and share card F:** new copy for surviving or getting hit. The B01 button is now "Beat the clock".
+- **A11 and B12:** the count now says 3 of 10 friends, matching the people listed.
 - **A14 and B14:** now show the guess and the chosen filter.
 - **User flow diagram:** updated for all of the above.
 

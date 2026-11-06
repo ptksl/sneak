@@ -134,6 +134,9 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 12c Profile · not Most Wanted | `137:711` | `137:879` | Avatar, Artifact Tag, Button, Artifact / Hero, Toggle, Tab Bar |
 | 12d Profile · Do not disturb open | `165:969` | `172:1068` | Avatar, Artifact Tag, Button, Chip, Artifact / Hero, Toggle, Tab Bar |
 | 12e Trophies | `165:1126` | `172:1076` | Artifact / Hero |
+| 12f Radar | `283:2648` | `283:2690` | Contact Row, Button |
+| 12g Add friends | `283:2760` | `283:2777` | Chip, Callout, Contact Row, Button |
+| 12h Remove from radar | `283:2839` | `283:2858` | Contact Row, Button, Dialog |
 | 13 Armory | `8:425` | `13:476` | Tab Bar |
 | 13b Armory · Shield applied | `103:417` | `104:782` | Tab Bar, Toast |
 
@@ -188,7 +191,7 @@ A05 Send code→ A06 · A06 Verify→ A07 · A07 Continue→ A09
 A09 Sync contacts→ A11 · Add numbers manually→ A11b→ A12
 A11 Continue→ A12
 A12 Allow and continue→ A13 if someone accepted · otherwise 11d
-11d Add more friends→ A11 · someone accepts (N34)→ A13
+11d Add more friends→ 12g · someone accepts (N34)→ A13
 A13 Sneak Maya→ A13a (C06)
 
 Caller
@@ -232,10 +235,14 @@ S01 Sneak Maya→ C06 · Cancel→ 11
 12 Trophy shelf→ 12e · Do not disturb→ 12d · 12e Profile→ 12
 12d Do not disturb→ 12 · Trophy shelf→ 12e · Add a window→ 12b
 12b Save window / Cancel→ 12d
+12 / 12c / 12d Radar→ 12f · 12f Profile→ 12
+12f Review→ R04 · R04 Accept / Not now→ 12f
+12f Remove→ 12h · 12h Keep / Remove→ 12f
+12f Add more friends→ 12g · 12g Done / Radar→ 12f
 12c Trophy shelf→ 12e
 ```
 
-**In Figma but not in the prototype:** A04b, A09, A11b, 11d, all of B, and R04. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
+**In Figma but not in the prototype:** A04b, A09, A11b, 11d and all of B. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
 
 **Later sneaks skip C08** once a default filter is set. The steps become S01 → C06 → C01 → C02.
 
@@ -245,4 +252,4 @@ S01 Sneak Maya→ C06 · Cancel→ 11
 - The white watermark appears on downloads only, never in the app.
 - Video placeholders stand in for live camera feeds. Build real video there, not images.
 - Nothing rings from an invite. The timer decides: survive, or you got hit.
-- Nobody joins a radar without accepting. Radar holds up to 10 friends.
+- Nobody joins a radar without accepting. Radar holds up to 10 friends, counting people requested and invited.
