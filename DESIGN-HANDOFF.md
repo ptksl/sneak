@@ -92,6 +92,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - Only people on your radar can sneak you. Radar means people you've invited, plus friends on Sneak who accepted your request (R04). Contacts are never added automatically.
 - If nobody has accepted by the end of sign-up, a new user skips First sneak and waits in the Arena (11d). Someone accepting opens First sneak.
 - Manage your radar in Profile › Radar (12f): answer requests, remove friends (12h) and add more (12g).
+- At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
 - A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
@@ -110,7 +111,6 @@ Check with design before building these.
 |---|---|---|
 | Does the Profile ringtone setting replace the Custom ringtone power-up? | 12, 13, S01 | Both exist |
 | Does joining from an invite count as accepting? | B10, B12 | Yes, the inviter is on your radar straight away |
-| Can you accept a request when your radar is full? | R04, 12f | Not drawn |
 | Do requested and invited people count towards the 10? | A11, 12f | Yes |
 | Is removing someone silent and two-way? | 12h | Yes to both |
 | Does removing someone cancel a running Vendetta? | 12h | Not defined |

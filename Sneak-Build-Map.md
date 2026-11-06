@@ -106,6 +106,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | R02 Receiver · record permission | `101:410` | `104:728` | Video / Placeholder, Dialog |
 | R03 Receiver · hit reason | `101:448` | `104:739` | Artifact Tag, Chip, Button |
 | R04 Receiver · radar request | `268:1172` | `268:1183` | Avatar, Callout, Button |
+| R04b Receiver · radar full | `287:1308` | `287:1319` | Avatar, Callout, Button |
 
 ### Core loop (section `7:161`)
 
@@ -237,12 +238,13 @@ S01 Sneak Maya→ C06 · Cancel→ 11
 12b Save window / Cancel→ 12d
 12 / 12c / 12d Radar→ 12f · 12f Profile→ 12
 12f Review→ R04 · R04 Accept / Not now→ 12f
+At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 12f Remove→ 12h · 12h Keep / Remove→ 12f
 12f Add more friends→ 12g · 12g Done / Radar→ 12f
 12c Trophy shelf→ 12e
 ```
 
-**In Figma but not in the prototype:** A04b, A09, A11b, 11d and all of B. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
+**In Figma but not in the prototype:** A04b, A09, A11b, 11d, R04b and all of B. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
 
 **Later sneaks skip C08** once a default filter is set. The steps become S01 → C06 → C01 → C02.
 
