@@ -9,7 +9,7 @@
 - **Closed beta:** launch uses beta codes, so the waitlist map is archived. Whether sign-up needs a code screen isn't decided.
 - **Scouting:** removed.
 - **Invites never ring:** the Ambush SMS starts a 5-minute timer. Make an account in time and you survived; miss it and you got hit. One person can have many invites running, so it can't be a real call.
-- **Radar limit:** up to 10 friends. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
+- **Radar limit:** up to 10 friends, replacing the doc's 3 invites a week. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
 - **Default filter:** set once on the first sneak or in Profile, so people don't pick every time. It can still be changed while ringing.
 - **Replay:** opens the duel full screen with a back button.
 - **Copy:** "Look alive." uses the italic Wink style. Losing reads "you got hit".
@@ -110,7 +110,7 @@ The idea is to frame posting as **comedic evidence, a game mechanic, or retaliat
    - **AirDrop Ambush:** AirDrop a crosshair graphic to everyone in a library or lecture hall: *"Someone in this room just put a bounty on you. Check your hitlist."* plus a QR code.
    - **Stickers and chalk:** *"You're being hunted. [QR]"* on mirrors, tables, and bus stops.
 4. **Velvet rope.**
-   - **Ammunition limit:** exactly **3 invites per week**.
+   - **Ammunition limit (replaced 6 Nov 2026 by the 10-friend cap):** exactly **3 invites per week**.
    - **Geofenced waitlist map** outside the launch campus: *"Your city needs 500 more targets before Sneak unlocks in your area. Share this link to speed it up."*
 5. **Trojan horse.** Drop Ambush links into existing WhatsApp and Discord groups. Barter with **hyper-local campus meme pages**: custom inside-joke ringtones or badges in exchange for pinned posts.
 

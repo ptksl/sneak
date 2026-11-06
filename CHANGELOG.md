@@ -14,8 +14,8 @@ Figma review log: node `274:13`.
 - **Default filter:** a new setting in Profile, so people don't choose every time.
 - **A13a to A13c and B13a to B13c:** guess for 2× points, recording permission and filter, straight after First sneak.
 - **B07 You survived:** shown when an invited person finishes their account in time.
-- **Push notifications:** a list of 40 in `NOTIFICATIONS.md` and on the Read Me page.
-- **10-friend cap:** explained on the invite screen, and shown as "4 of 10" in Profile.
+- **Push notifications:** a list of 39 in `NOTIFICATIONS.md` and on the Read Me page.
+- **10-friend cap:** explained on the invite screen, and shown as "4 of 10" in Profile. It replaces the 3 invites a week.
 
 ### Changed
 
@@ -33,6 +33,7 @@ Figma review log: node `274:13`.
 ### Removed (moved to page 99, node `268:1054`)
 
 - **Scouting:** 14 Scouting Sheet, and the Scout tips on screen 10 and B08b.
+- **3 invites a week:** the limit, the Invites row in Profile, and share card J · Velvet rope.
 - **Waitlist, for the closed beta:** A08 and share card I, plus the campus check in the flow.
 - **Separate friends step:** A11c and B12c.
 - **Ringing from an invite:** old B07 Incoming sneak, B08a, B08 and B09.

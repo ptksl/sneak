@@ -90,9 +90,8 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 ### Access and limits
 
 - Only people on your radar can sneak you. Radar means people you've invited, plus friends on Sneak who accepted your request (R04). Contacts are never added automatically.
-- A radar holds up to 10 friends.
+- A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
-- Invites are limited to 3 per week.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
 
 ### Invites
@@ -108,7 +107,6 @@ Check with design before building these.
 | Question | Where it matters | Used in the designs for now |
 |---|---|---|
 | Does the Profile ringtone setting replace the Custom ringtone power-up? | 12, 13, S01 | Both exist |
-| Is the 10-friend cap on top of 3 invites a week, or instead of it? | A11, B12, 12 | Both exist |
 | Does joining from an invite count as accepting? | B10, B12 | Yes, the inviter is on your radar straight away |
 | What if nobody has accepted by First sneak? | A13, B13 | Not drawn |
 | Can you accept a request when your radar is full? | R04 | Not drawn |

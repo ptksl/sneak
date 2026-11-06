@@ -148,7 +148,6 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | F · Ambush SMS | `9:445` | `14:116` | 390×844 |
 | G · Campus sticker | `9:477` | `14:168` | 300×300 |
 | H · AirDrop image | `9:631` | `14:182` | 300×380 |
-| J · Velvet rope | `9:896` | `14:151` | 390×300 |
 | K · Wanted poster | `65:282` | `65:434` | 390×488 |
 
 ## Components (DS page)

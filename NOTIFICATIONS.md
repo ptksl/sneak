@@ -69,8 +69,7 @@ Every push the flows need, as of 6 Nov 2026. Figma has the same list on the Read
 | N36 | Invited friend survived | Inviter | Jay made it in time and survived. | S01 | Beta |
 | N37 | Invite timer ran out | Inviter | Time's up. Jay didn't make it, so you scored. | 11 | Beta |
 | N38 | Bounty Hunter reward | Inviter | Jay joined, so you earned a Shield. | 13 | Beta |
-| N39 | Invites refilled | Player | You've got 3 new invites this week. | 12 | Later |
-| N40 | Radar slot freed | Player at 10 friends | You've got room on your radar again. | 12 | Later |
+| N39 | Radar slot freed | Player at 10 friends | You've got room on your radar again. | 12 | Later |
 
 ## Not push notifications
 
