@@ -20,6 +20,7 @@ Several ideas in the original doc have been overturned, so don't build from sect
 - **Status Bar and System / Keyboard:** these components show system UI. Don't rebuild them.
 - **Video / Placeholder:** stands in for a live camera feed or recorded video.
 - **Sample content:** names such as Maya and Jay, scores and timers are examples.
+- **Emoji:** standard system emoji in copy, not images.
 - **Colour and type:** use the tokens and text styles rather than values read off a frame. Colours are in `Sneak-Brand-Assets/colours.json`.
 - **Dark mode:** not redrawn. It's the same screens with the Dark token values, following the phone's setting. Call screens stay black in both modes.
 - **Page 05 and page 06:** copies of other screens. Build from the originals.

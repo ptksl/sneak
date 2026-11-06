@@ -13,7 +13,7 @@ Dark, Brand, Paper and White, as SVG and 1024 px PNG. These have rounded corners
 
 ## Artifacts: `artifacts/`
 
-The file has no emoji. These are its equivalent:
+Copy can use standard system emoji, which aren't included here. These are Sneak's own illustrations:
 
 - `hero/`: full colour, transparent, SVG and 1024 px PNG. Kill, Hit, Vendetta, Most Wanted, Streak.
 - `glyph/`: one colour for small tags, transparent, SVG and 256 px PNG. Kill, Hit, Vendetta, Most Wanted. Streak has no glyph in the design system.

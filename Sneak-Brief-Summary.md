@@ -12,6 +12,7 @@
 - **Radar limit:** up to 10 friends, replacing the doc's 3 invites a week. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
 - **No acceptances yet:** a new user skips First sneak and waits in the Arena until someone accepts. This replaces the doc's rule that users never see an empty feed.
 - **Full radar:** at 10 of 10 you must remove someone before accepting a request.
+- **Tone:** Sneak should feel like a closed, exclusive space for your closest friends. Copy can use emoji to help ("10 spots. Choose wisely 👀").
 - **Radar screen:** in Profile, for answering requests, removing friends and adding more.
 - **Default filter:** set once on the first sneak or in Profile, so people don't pick every time. It can still be changed while ringing.
 - **Replay:** opens the duel full screen with a back button.
