@@ -14,6 +14,8 @@ Design and handoff changes, newest first. Figma keeps a linked version of each r
 
 ### Changed
 
+- **Sent requests:** the button now says Cancel instead of Requested. The status line still says "Requested · waiting for them".
+- **Mutuals:** removed everywhere, including the Contact Row component.
 - **Request signposts:** Arena banner, Profile tab dot and a request count on the Radar row. Radar shows two requests to show the list.
 - **Arena duel card:** full width again, video cropped to fill, votes underneath.
 - **08 Post Consent:** preview almost full width, cropped to fill, options below.
