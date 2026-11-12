@@ -2,6 +2,26 @@
 
 Design and handoff changes, newest first. Figma keeps a linked version of each round on the Read Me page, and old screens are kept on page 99 rather than deleted. Add an entry whenever a screen, rule or handoff file changes.
 
+## 12 Nov 2026 (later)
+
+### Added
+
+- **A02a and B02a Pick a username:** suggested from the name, with taken and available states.
+- **11e Arena · empty:** one-tap faces to sneak, a Purge countdown and a Sneak someone button.
+- **Back links** on 11b, 12b, R04 and R04b.
+- **Radar button** on Profile, next to Edit profile.
+- **Add someone by phone number** on A11, B12 and 12g.
+
+### Changed
+
+- **Status lines:** just "Requested" and "Invited". Invites get a Cancel button, and On radar becomes Remove.
+- **Arena duel card:** 9:16, with time left and Save on the video.
+- **Requests banner:** "N people saved you a spot on their radar", with no names.
+- **Feed:** "Zara hit Rohan's sneak" becomes "Rohan got Zara · Zara's excuse: in class", so a missed sneak is always told one way.
+- **11b:** bigger 9:16 preview, no watermark line.
+- **Profile:** the sample address is removed.
+- **N35:** says that joining from an invite counts as accepting.
+
 ## 12 Nov 2026
 
 ### Added

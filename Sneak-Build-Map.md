@@ -44,6 +44,9 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | A00 Splash | `100:868` | `104:1730` | Logo / Lockup — Stacked |
 | A01 Welcome | `42:13` | `46:414` | Logo / Lockup — Stacked, Button |
 | A02 Your name | `42:44` | `46:424` | Progress Bar, Input, Button, System / Keyboard |
+| A02a Username · suggested | `350:1138` | `350:1148` | Progress Bar, Input, Button, System / Keyboard |
+| A02a Username · taken | `350:1180` | `350:1190` | Progress Bar, Input, Chip, Button, System / Keyboard |
+| A02a Username · available | `350:1229` | `350:1239` | Progress Bar, Input, Button, System / Keyboard |
 | A02b Add your photo | `331:1121` | `331:1131` | Progress Bar, Chip, Button |
 | A03 Jump Scare | `43:117` | `46:523` | none |
 | A04 You survived | `43:149` | `46:537` | Video / Placeholder, Button |
@@ -67,6 +70,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 |---|---|---|---|
 | B00 Ambush SMS | `44:198` | `46:603` | Avatar, Logo / Mark |
 | B01 Invite landing | `44:230` | `46:617` | Logo / Lockup — Horizontal, Avatar, Button |
+| B02a Username | `350:1271` | `350:1282` | Invite Timer Banner, Progress Bar, Input, Button, System / Keyboard |
 | B02b Add your photo | `331:1170` | `331:1181` | Invite Timer Banner, Progress Bar, Chip, Button |
 | B02 Your name | `44:262` | `46:631` | Invite Timer Banner, Progress Bar, Input, Button, System / Keyboard |
 | B03 Phone number | `44:291` | `46:641` | Invite Timer Banner, Progress Bar, Input, Button, System / Keyboard |
@@ -139,6 +143,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 11 Arena | `8:171` | `13:440` | Video / Placeholder, Status Tag, Chip, Arena Card, Avatar, Tab Bar |
 | 11b Save duel (9:16) | `104:441` | `104:766` | Video / Placeholder, Logo / Lockup — Horizontal, Button |
 | 11c Duels | `137:531` | `137:860` | Video / Placeholder, Status Tag, Button, Tab Bar |
+| 11e Arena · empty | `348:1569` | `348:1585` | Avatar, Callout, Button, Tab Bar |
 | 11d Arena · waiting | `280:1149` | `280:1195` | Callout, Contact Row, Button, Tab Bar |
 | S01 New sneak | `137:645` | `137:871` | Input, Contact Row, Chip, Button |
 | 12 Profile | `104:484` | `13:458` | Avatar, Artifact Tag, Button, Chip, Artifact / Hero, Toggle, Tab Bar |
@@ -199,7 +204,7 @@ From the prototype's connections. Steps marked "auto" and taps on a whole screen
 Sign-up
 A00 auto→ A01
 A01 Get started→ A02 · I already have an account→ L01
-A02 Continue→ A02b · A02b Looks good / Skip for now→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
+A02 Continue→ A02a · A02a Continue→ A02b · A02b Looks good / Skip for now→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
 A05 Send code→ A06 · A06 Verify→ A07 · A07 Continue→ A09
 A09 Sync contacts→ A11 · Add numbers manually→ A11b→ A12
 A11 Continue→ A12
@@ -237,7 +242,7 @@ L03 Back to the Arena→ 11
 L04 Create an account→ A02 · Try another number→ L01
 
 Invited (not in the prototype, see the flow diagram)
-B00 → B01 → B02 → B02b → B03 → B04 → B05
+B00 → B01 → B02 → B02a → B02b → B03 → B04 → B05
 B05 in time→ B07 · timer ran out→ B08b
 B07 / B08b → B10 → B12 (or B12b) → B06 → B13 → B13a → B13b → B13c → B14
 
@@ -249,7 +254,9 @@ S01 Sneak Maya→ C06 → C01 → C02 (no filter step, default already on) · Ca
 12 Trophy shelf→ 12e · Do not disturb→ 12d · 12e Profile→ 12
 12d Do not disturb→ 12 · Trophy shelf→ 12e · Add a window→ 12b
 12b Save window / Cancel→ 12d
-11 Requests banner→ 12f
+11 Requests banner→ 12f · 11b ‹ Arena→ 11
+12 Radar button→ 12f · 12b ‹ Do not disturb→ 12d · R04 ‹ Radar→ 12f
+11e Sneak someone→ S01 · tap a face→ S01 with that person picked
 12 / 12c / 12d Radar→ 12f · 12f Profile→ 12
 12f Review→ R04 · R04 Accept / Not now→ 12f
 At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
@@ -259,7 +266,7 @@ At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 12c Trophy shelf→ 12e
 ```
 
-**In Figma but not in the prototype:** A04b, A09, A11b, 11d, R04b and all of B. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
+**In Figma but not in the prototype:** A04b, A09, A11b, 11d, 11e, R04b, the A02a taken and available states, and all of B. A13a to A13c use C06, C01 and C08 there. Read the notes for how screens connect, and the flow diagram `40:11` for sign-up.
 
 **Later sneaks skip C08** once a default filter is set. The steps become S01 → C06 → C01 → C02.
 

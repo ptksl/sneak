@@ -87,7 +87,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 ### Video shape
 
-- **In the app:** the Arena card and 08 use the full width, with the video cropped to fill and faces kept in view. Never stretch it.
+- **In the app:** the Arena card is full width at 9:16, like a feed, with time left and Save on the video. 08 uses the full width. Video is cropped to fill with faces kept in view, never stretched.
 - **Downloads:** 9:16, for Reels, TikTok and Shorts (11b). The white watermark appears on downloads only.
 
 ### Access and limits
@@ -99,6 +99,11 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
 - A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
+- **Username:** asked after the name (A02a). Suggested from the name and checked live: unique, 3 to 20 characters, letters, numbers, dots and underscores. A taken name shows suggestions and disables Continue. Same rules in Profile (12i).
+- **Back navigation:** every second-layer screen has a back link at the top left, such as "‹ Profile" or "‹ Radar".
+- **Feed wording:** a missed sneak is always "X got Y", with the excuse if one was given. Never "Y hit X's sneak".
+- **Requests banner:** "Someone saved you a spot on their radar" for one, "N people saved you a spot on their radar" for more. No names.
+- **Empty Arena (11e):** shown when there are no duels, posts or requests.
 - **Profile photo:** asked after the name (A02b, B02b), skippable, and editable in Profile (12i). Used on sneaks, the wanted poster and share cards.
 - **Typed guesses:** both sides can type with Other…. A typed guess is confirmed by the receiver (R03c); chip guesses are matched automatically.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
