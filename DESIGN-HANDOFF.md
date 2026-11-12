@@ -94,6 +94,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 - Only people on your radar can sneak you. Radar means people you've invited, plus friends on Sneak who accepted your request (R04). Contacts are never added automatically.
 - If nobody has accepted by the end of sign-up, a new user skips First sneak and waits in the Arena (11d). Someone accepting opens First sneak.
+- **Pending requests:** a banner at the top of the Arena (opens Radar), a dot on the Profile tab, and a count on the Radar row. Each disappears when no requests are left. Push N33 opens the request directly.
 - Manage your radar in Profile › Radar (12f): answer requests, remove friends (12h) and add more (12g).
 - At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
 - A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.

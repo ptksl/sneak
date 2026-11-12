@@ -249,6 +249,7 @@ S01 Sneak Maya→ C06 → C01 → C02 (no filter step, default already on) · Ca
 12 Trophy shelf→ 12e · Do not disturb→ 12d · 12e Profile→ 12
 12d Do not disturb→ 12 · Trophy shelf→ 12e · Add a window→ 12b
 12b Save window / Cancel→ 12d
+11 Requests banner→ 12f
 12 / 12c / 12d Radar→ 12f · 12f Profile→ 12
 12f Review→ R04 · R04 Accept / Not now→ 12f
 At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f

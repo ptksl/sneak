@@ -14,6 +14,7 @@ Design and handoff changes, newest first. Figma keeps a linked version of each r
 
 ### Changed
 
+- **Request signposts:** Arena banner, Profile tab dot and a request count on the Radar row. Radar shows two requests to show the list.
 - **Arena duel card:** full width again, video cropped to fill, votes underneath.
 - **08 Post Consent:** preview almost full width, cropped to fill, options below.
 - **A11:** shows a first-time user, with no accepted friends. "On your radar" replaces "Accepted · on your radar".
