@@ -18,7 +18,8 @@ Several ideas in the original doc have been overturned, so don't build from sect
 - **Canvas:** screens are 390 wide and 844 tall. Taller frames scroll. Lay screens out responsively rather than fixing them to these sizes.
 - **Screen corners:** frames are square. The phone supplies the rounded display corners.
 - **Status Bar and System / Keyboard:** these components show system UI. Don't rebuild them.
-- **Video / Placeholder:** stands in for a live camera feed or recorded video.
+- **Video / Placeholder:** stands in for a live camera feed or recorded video. Duels in the app are cropped to fill, never stretched.
+- **Sample photos:** the faces on A04, A04b, B07, A02b and the filter screens are AI-generated placeholders. Don't ship them.
 - **Sample content:** names such as Maya and Jay, scores and timers are examples.
 - **Emoji:** standard system emoji in copy, not images.
 - **Colour and type:** use the tokens and text styles rather than values read off a frame. Colours are in `Sneak-Brand-Assets/colours.json`.
@@ -71,7 +72,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 2. Add power-ups.
 3. Optional guess at what they're doing, for 2× points.
 4. Record permission.
-5. Pick a filter (None, Fisheye, Clown or Thermal), only if no default is set. "Use this for every sneak" saves it as the default in Profile. From then on this step doesn't appear.
+5. Pick a filter (None, Fisheye, Clown, Thermal, Bobblehead or Old age), only if no default is set. "Use this for every sneak" saves it as the default in Profile. From then on this step doesn't appear.
 6. It rings for 10 seconds. The countdown is on the top half and the caller's camera on the bottom. The filter can still be changed here for this sneak. It previews on the caller's video and lands on the receiver at pick-up.
 7. During the duel, the caller can change the filter with the 🎭 button (07c). The receiver doesn't get this button.
 
@@ -86,7 +87,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 ### Video shape
 
-- **In the app:** close to the recorded shape, about 1:2 (08, B09, Arena card). Don't stretch it to fill wider spaces.
+- **In the app:** the Arena card and 08 use the full width, with the video cropped to fill and faces kept in view. Never stretch it.
 - **Downloads:** 9:16, for Reels, TikTok and Shorts (11b). The white watermark appears on downloads only.
 
 ### Access and limits
@@ -97,6 +98,8 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
 - A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
+- **Profile photo:** asked after the name (A02b, B02b), skippable, and editable in Profile (12i). Used on sneaks, the wanted poster and share cards.
+- **Typed guesses:** both sides can type with Other…. A typed guess is confirmed by the receiver (R03c); chip guesses are matched automatically.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
 
 ### Invites
@@ -117,10 +120,10 @@ Check with design before building these.
 | Is removing someone silent and two-way? | 12h | Yes to both |
 | Does removing someone cancel a running Vendetta? | 12h | Not defined |
 | Does a default filter keep costing 3 points per sneak? | C08, S01 | Yes, and None if you can't afford it |
-| Who confirms a typed Other… guess? | C06b | Not drawn. It can't be matched automatically |
 | What does changing the filter during a duel cost? | 07c | Nothing extra once paid on that sneak. If none was added, 3 points or first one free |
 | Does a closed beta need a screen for entering a beta code? | Sign-up | Not drawn |
 | Does surviving an invite earn points, and does the inviter get +10 for a hit? | B07, B08b | No points for surviving, +10 for the inviter |
+| Random duel topic (07d): keep it? | 07 | Exploration only |
 | What happens when the decision timer on the post screen reaches zero? | 08 | Not defined |
 | Is the first filter free? | A14, B14 | Free, then 3 per use (a proposal) |
 | Does the filter land on the receiver or the caller? | Ringing, 06, 07 | Receiver, with the caller previewing it |

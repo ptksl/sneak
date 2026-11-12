@@ -44,6 +44,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | A00 Splash | `100:868` | `104:1730` | Logo / Lockup — Stacked |
 | A01 Welcome | `42:13` | `46:414` | Logo / Lockup — Stacked, Button |
 | A02 Your name | `42:44` | `46:424` | Progress Bar, Input, Button, System / Keyboard |
+| A02b Add your photo | `331:1121` | `331:1131` | Progress Bar, Chip, Button |
 | A03 Jump Scare | `43:117` | `46:523` | none |
 | A04 You survived | `43:149` | `46:537` | Video / Placeholder, Button |
 | A04b You got sneaked | `43:173` | `46:551` | Video / Placeholder, Button |
@@ -66,6 +67,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 |---|---|---|---|
 | B00 Ambush SMS | `44:198` | `46:603` | Avatar, Logo / Mark |
 | B01 Invite landing | `44:230` | `46:617` | Logo / Lockup — Horizontal, Avatar, Button |
+| B02b Add your photo | `331:1170` | `331:1181` | Invite Timer Banner, Progress Bar, Chip, Button |
 | B02 Your name | `44:262` | `46:631` | Invite Timer Banner, Progress Bar, Input, Button, System / Keyboard |
 | B03 Phone number | `44:291` | `46:641` | Invite Timer Banner, Progress Bar, Input, Button, System / Keyboard |
 | B04 Verify code | `44:322` | `46:651` | Invite Timer Banner, Progress Bar, Code Cell, Button, System / Keyboard |
@@ -98,7 +100,11 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | C06 Caller · guess before ringing | `101:488` | `104:747` | Chip, Button |
 | C06b Caller · guess, Other | `292:1398` | `292:1416` | Chip, Input, Button, System / Keyboard |
 | C01 Caller · record permission | `101:248` | `104:696` | Avatar, Chip, Button, Dialog |
-| C08 Caller · pick a filter | `268:1058` | `268:1076` | Video / Placeholder, Chip, Toggle, Button |
+| C08 Caller · pick a filter (Fisheye) | `268:1058` | `268:1076` | Chip, Toggle, Button, sample photo |
+| C08b Filter · Clown | `330:1442` | `330:1464` | Same as C08 |
+| C08c Filter · Thermal | `330:1491` | `330:1513` | Same as C08 |
+| C08d Filter · Bobblehead | `330:1540` | `330:1562` | Same as C08 |
+| C08e Filter · Old age | `330:1589` | `330:1611` | Same as C08 |
 | C02 Caller · ringing | `101:219` | `104:688` | Video / Placeholder, Chip, Button |
 | C07 Caller · guessed right | `101:526` | `104:755` | Artifact / Hero, Avatar, Button |
 | C03 Caller · no internet | `101:290` | `104:704` | Avatar, Chip, Button, Dialog |
@@ -106,6 +112,8 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | C05 Caller · couldn't reach | `101:370` | `104:720` | Avatar, Chip, Button, Dialog |
 | R02 Receiver · record permission | `101:410` | `104:728` | Video / Placeholder, Dialog |
 | R03 Receiver · hit reason | `101:448` | `104:739` | Artifact Tag, Chip, Button |
+| R03b Receiver · reason, Other | `328:1378` | `328:1396` | Artifact Tag, Chip, Input, Button, System / Keyboard |
+| R03c Receiver · confirm the guess | `328:1437` | `328:1455` | Artifact Tag, Callout, Button |
 | R04 Receiver · radar request | `268:1172` | `268:1183` | Avatar, Callout, Button |
 | R04b Receiver · radar full | `287:1308` | `287:1319` | Avatar, Callout, Button |
 
@@ -117,6 +125,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 07a Duel starting | `162:695` | `172:1052` | Video / Placeholder, Status Tag |
 | 07 Live Duel | `7:208` | `13:367` | Video / Placeholder, Status Tag |
 | 07c Live Duel · change filter | `292:1329` | `292:1353` | Video / Placeholder, Chip |
+| 07d Live Duel · random topic (exploration, not in a flow) | `328:1493` | `328:1517` | Video / Placeholder |
 | 07b Live Duel · not recording | `162:740` | `172:1060` | Video / Placeholder |
 | 08 Post Consent | `7:253` | `13:385` | Video / Placeholder, Avatar, Status Tag, Button |
 | 08b Duel replay | `268:1117` | `268:1141` | Video / Placeholder |
@@ -140,6 +149,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 12f Radar | `283:2648` | `283:2690` | Contact Row, Button |
 | 12g Add friends | `283:2760` | `283:2777` | Chip, Callout, Contact Row, Button |
 | 12h Remove from radar | `283:2839` | `283:2858` | Contact Row, Button, Dialog |
+| 12i Edit profile | `330:1638` | `330:1657` | Avatar, Chip, Input, Button |
 | 13 Armory | `8:425` | `13:476` | Tab Bar |
 | 13b Armory · Shield applied | `103:417` | `104:782` | Tab Bar, Toast |
 
@@ -189,7 +199,7 @@ From the prototype's connections. Steps marked "auto" and taps on a whole screen
 Sign-up
 A00 auto→ A01
 A01 Get started→ A02 · I already have an account→ L01
-A02 Continue→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
+A02 Continue→ A02b · A02b Looks good / Skip for now→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
 A05 Send code→ A06 · A06 Verify→ A07 · A07 Continue→ A09
 A09 Sync contacts→ A11 · Add numbers manually→ A11b→ A12
 A11 Continue→ A12
@@ -213,7 +223,7 @@ Receiver
 R02 Allow & duel→ 07a · Continue without recording→ 07a (no recording)→ 07b→ 11
 07a auto→ 07 · 07 call ends→ 08
 08 Replay duel→ 08b · 08b Back→ 08
-R03 Send reason (−5) / Skip (−10)→ 10
+R03 Send reason (−5) / Skip (−10)→ 10 · Other…→ R03b → R03c (if the caller typed a guess) → 10
 10 Plan revenge→ S01
 09 Share the evidence / Back to Arena→ 11
 
@@ -227,7 +237,7 @@ L03 Back to the Arena→ 11
 L04 Create an account→ A02 · Try another number→ L01
 
 Invited (not in the prototype, see the flow diagram)
-B00 → B01 → B02 → B03 → B04 → B05
+B00 → B01 → B02 → B02b → B03 → B04 → B05
 B05 in time→ B07 · timer ran out→ B08b
 B07 / B08b → B10 → B12 (or B12b) → B06 → B13 → B13a → B13b → B13c → B14
 
@@ -243,6 +253,7 @@ S01 Sneak Maya→ C06 → C01 → C02 (no filter step, default already on) · Ca
 12f Review→ R04 · R04 Accept / Not now→ 12f
 At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 12f Remove→ 12h · 12h Keep / Remove→ 12f
+12 Edit profile→ 12i · 12i Save / Profile→ 12
 12f Add more friends→ 12g · 12g Done / Radar→ 12f
 12c Trophy shelf→ 12e
 ```
@@ -255,6 +266,7 @@ At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 
 - In-app duels show close to their recorded shape, about 1:2. Only the download is 9:16 (11b).
 - The white watermark appears on downloads only, never in the app.
-- Video placeholders stand in for live camera feeds. Build real video there, not images.
+- Video placeholders stand in for live camera feeds. Build real video there, not images. Photos on A04, A04b, B07 and the C08 screens are AI-generated samples, kept on the DS page (`332:2400`).
+- In-app duel video is cropped to fill its frame (like aspect-fill), never stretched.
 - Nothing rings from an invite. The timer decides: survive, or you got hit.
 - Nobody joins a radar without accepting. Radar holds up to 10 friends, counting people requested and invited.

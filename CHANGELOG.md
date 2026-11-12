@@ -2,6 +2,22 @@
 
 Design and handoff changes, newest first. Figma keeps a linked version of each round on the Read Me page, and old screens are kept on page 99 rather than deleted. Add an entry whenever a screen, rule or handoff file changes.
 
+## 12 Nov 2026
+
+### Added
+
+- **A02b and B02b Add your photo:** a skippable profile photo step after the name. **12i Edit profile** changes it later.
+- **Five filters:** Fisheye, Clown, Thermal, Bobblehead, Old age, in every picker. C08 and C08b to C08e show each on a sample face.
+- **R03b and R03c:** the receiver can type an Other… reason, and confirms the caller's typed guess. Push N40.
+- **07d random topic:** an exploration, not in any flow yet.
+- **Sample photos:** on A04, A04b and B07, and on the DS page.
+
+### Changed
+
+- **Arena duel card:** full width again, video cropped to fill, votes underneath.
+- **08 Post Consent:** preview almost full width, cropped to fill, options below.
+- **A11:** shows a first-time user, with no accepted friends. "On your radar" replaces "Accepted · on your radar".
+
 ## 6 Nov 2026
 
 Figma review log: node `274:13`.
