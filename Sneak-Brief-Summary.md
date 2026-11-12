@@ -14,7 +14,7 @@
 - **Full radar:** at 10 of 10 you must remove someone before accepting a request.
 - **Tone:** Sneak should feel like a closed, exclusive space for your closest friends. Copy can use emoji to help ("10 spots. Choose wisely 👀").
 - **Radar screen:** in Profile, for answering requests, removing friends and adding more.
-- **Filters:** five to start: Fisheye, Clown, Thermal, Bobblehead, Old age.
+- **Filters (locked 12 Nov 2026):** five to start: Fisheye, Clown, Thermal, Bobblehead, Old age.
 - **Profile photo:** added after the name in sign-up, skippable, editable in Profile.
 - **Typed guesses:** the receiver confirms them.
 - **Default filter:** set once on the first sneak or in Profile, so later sneaks skip that step. It can still be changed while ringing, and by the caller during the duel.

@@ -7,7 +7,7 @@ Design and handoff changes, newest first. Figma keeps a linked version of each r
 ### Added
 
 - **A02b and B02b Add your photo:** a skippable profile photo step after the name. **12i Edit profile** changes it later.
-- **Five filters:** Fisheye, Clown, Thermal, Bobblehead, Old age, in every picker. C08 and C08b to C08e show each on a sample face.
+- **Five filters, locked:** Fisheye, Clown, Thermal, Bobblehead, Old age, in every picker. C08 and C08b to C08e show each on a sample face.
 - **R03b and R03c:** the receiver can type an Other… reason, and confirms the caller's typed guess. Push N40.
 - **07d random topic:** an exploration, not in any flow yet.
 - **Sample photos:** on A04, A04b and B07, and on the DS page.
