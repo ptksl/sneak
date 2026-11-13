@@ -14,6 +14,7 @@ Design and handoff changes, newest first. Figma keeps a linked version of each r
 
 ### Changed
 
+- **10-friend cap:** only accepted friends count. Spot counts updated everywhere.
 - **Status lines:** just "Requested" and "Invited". Invites get a Cancel button, and On radar becomes Remove.
 - **Arena duel card:** 9:16, with time left and Save on the video.
 - **Requests banner:** "N people saved you a spot on their radar", with no names.

@@ -277,4 +277,4 @@ At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 - Video placeholders stand in for live camera feeds. Build real video there, not images. Photos on A04, A04b, B07 and the C08 screens are AI-generated samples, kept on the DS page (`332:2400`).
 - In-app duel video is cropped to fill its frame (like aspect-fill), never stretched.
 - Nothing rings from an invite. The timer decides: survive, or you got hit.
-- Nobody joins a radar without accepting. Radar holds up to 10 friends, counting people requested and invited.
+- Nobody joins a radar without accepting. Radar holds up to 10 friends, counting only accepted friends.

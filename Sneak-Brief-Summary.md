@@ -9,7 +9,7 @@
 - **Closed beta:** launch uses beta codes, so the waitlist map is archived. Whether sign-up needs a code screen isn't decided.
 - **Scouting:** removed.
 - **Invites never ring:** the Ambush SMS starts a 5-minute timer. Make an account in time and you survived; miss it and you get hit. One person can have many invites running, so it can't be a real call.
-- **Radar limit:** up to 10 friends, replacing the doc's 3 invites a week. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
+- **Radar limit:** up to 10 accepted friends, replacing the doc's 3 invites a week. Requests and invites don't use a spot. Friends on Sneak must accept a request before joining, so nobody gets sneaked without agreeing.
 - **No acceptances yet:** a new user skips First sneak and waits in the Arena until someone accepts. This replaces the doc's rule that users never see an empty feed.
 - **Full radar:** at 10 of 10 you must remove someone before accepting a request.
 - **Tone:** Sneak should feel like a closed, exclusive space for your closest friends. Copy can use emoji to help ("10 spots. Choose wisely 👀").
