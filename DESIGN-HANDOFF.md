@@ -97,8 +97,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - **Pending requests:** a banner at the top of the Arena (opens Radar), a dot on the Profile tab, and a count on the Radar row. Each disappears when no requests are left. Push N33 opens the request directly.
 - Manage your radar in Profile › Radar (12f): answer requests, remove friends (12h) and add more (12g).
 - At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
-- A radar holds up to 10 friends, counting only accepted friends. Requests and invites don't use a spot until accepted.
-- A radar holds up to 10 friends. This is the only limit on invites and requests: there's no weekly allowance.
+- A radar holds up to 10 friends, counting only accepted friends. Requests and invites don't use a spot until accepted, and there's no weekly limit.
 - During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
 - **Username:** asked after the name (A02a). Suggested from the name and checked live: unique, 3 to 20 characters, letters, numbers, dots and underscores. A taken name shows suggestions and disables Continue. Same rules in Profile (12i).
 - **Back navigation:** every second-layer screen has a back link at the top left, such as "‹ Profile" or "‹ Radar".
