@@ -2,6 +2,31 @@
 
 Design and handoff changes, newest first. Figma keeps a linked version of each round on the Read Me page, and old screens are kept on page 99 rather than deleted. Add an entry whenever a screen, rule or handoff file changes.
 
+## 13 Nov 2026
+
+### Added
+
+- **12j Delete account and 12k Delete account · code:** a Delete account row in Profile settings, a confirm screen, and an SMS code before deleting.
+- **L03 Arena · welcome back:** logging in lands in the Arena, with "While you were gone" at the top.
+
+### Changed
+
+- **Arena duel card:** names sit on the video, top left in white. Time left and Save move to the bottom of the video. The separate "Maya vs Jay" line is gone.
+- **A03 Jump Scare:** now looks like a real incoming sneak (06), with Hit and Duel and a "Practice · no points" tag.
+- **Filters are free:** removed from the Armory and from S01's power-ups. The "first one's free" copy is gone.
+- **Faster Sneak:** has its own lightning icon instead of the shield.
+- **12b Do not disturb:** quick pauses are 1h to 5h, replacing "Until tonight" and "Until tomorrow".
+- **Profile settings:** the Purge window and Notifications rows are removed.
+- **07a:** just a counter, with no "Duel starts in" label, and REC from pick-up.
+- **07 Live Duel:** the green duel-time bar at the top is removed, because the timer already shows it. Replays keep their playback bar.
+- **08 Post Consent:** the preview fills most of the screen, and the outcomes box is now one line.
+- **Typed guesses:** the app matches them itself.
+
+### Removed (moved to page 99)
+
+- **L03 Welcome back.**
+- **R03c Receiver · confirm the guess,** and push N40.
+
 ## 12 Nov 2026 (later)
 
 ### Added

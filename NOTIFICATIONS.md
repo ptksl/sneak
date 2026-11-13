@@ -70,7 +70,6 @@ Every push the flows need, as of 6 Nov 2026. Figma has the same list on the Read
 | N37 | Invite timer ran out | Inviter | Time's up. Jay didn't make it, so you scored. | 11 | Beta |
 | N38 | Bounty Hunter reward | Inviter | Jay joined, so you earned a Shield. | 13 | Beta |
 | N39 | Radar slot freed | Player at 10 friends | You've got room on your radar again. | 12f | Later |
-| N40 | Confirm a typed guess | Receiver | Maya guessed what you were doing. Did they get it right? 👀 | R03c | Beta |
 
 ## Not push notifications
 
@@ -85,6 +84,6 @@ These aren't decided yet, so check with design before building them.
 1. **Do not disturb:** N01 can't happen during DND. Should everything else wait until it ends, or send silently?
 2. **Revealing who said no:** N13 is written so it doesn't say who declined. N10 does reveal that the other person said yes.
 3. **Batching:** votes (N14) and friend activity (N15, N25, N28) need a limit so a busy friend group doesn't flood people.
-4. **Purge privacy:** the Purge window is hidden from friends, so N30 goes only to the player.
-5. **Settings:** Profile has one Notifications row. Decide whether people can mute by group. N01 should stay on, because a muted sneak still costs points.
+4. **Purge privacy:** a Purge is always hidden, and there's no setting for it. N30 goes only to the player.
+5. **Settings:** there's no notifications setting in the app for now; people use the phone's own settings. If one is added later, N01 should stay on, because a muted sneak still costs points.
 6. **Decision timer:** 08 says "Decide in 00:42", but what happens at zero isn't defined. N11 depends on it.

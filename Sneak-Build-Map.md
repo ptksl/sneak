@@ -48,7 +48,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | A02a Username · taken | `350:1180` | `350:1190` | Progress Bar, Input, Chip, Button, System / Keyboard |
 | A02a Username · available | `350:1229` | `350:1239` | Progress Bar, Input, Button, System / Keyboard |
 | A02b Add your photo | `331:1121` | `331:1131` | Progress Bar, Chip, Button |
-| A03 Jump Scare | `43:117` | `46:523` | none |
+| A03 Jump Scare | `43:117` | `46:523` | Same as 06: Status Tag, Avatar |
 | A04 You survived | `43:149` | `46:537` | Video / Placeholder, Button |
 | A04b You got sneaked | `43:173` | `46:551` | Video / Placeholder, Button |
 | A05 Phone number | `42:68` | `46:438` | Progress Bar, Input, Button, System / Keyboard |
@@ -94,7 +94,7 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 |---|---|---|---|
 | L01 Log in · number | `170:956` | `170:1126` | Input, Button, System / Keyboard |
 | L02 Log in · code | `170:982` | `170:1136` | Code Cell, Button, System / Keyboard |
-| L03 Welcome back | `170:1019` | `170:1146` | Avatar, Arena Card, Button |
+| L03 Arena · welcome back | `367:5284` | `170:1146` | Same as 11, plus Arena Card for "While you were gone" |
 | L04 No account found | `170:1094` | `170:1156` | Code Cell, Button, System / Keyboard, Dialog |
 
 ### Sneak, both sides (section `101:216`)
@@ -117,7 +117,6 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | R02 Receiver · record permission | `101:410` | `104:728` | Video / Placeholder, Dialog |
 | R03 Receiver · hit reason | `101:448` | `104:739` | Artifact Tag, Chip, Button |
 | R03b Receiver · reason, Other | `328:1378` | `328:1396` | Artifact Tag, Chip, Input, Button, System / Keyboard |
-| R03c Receiver · confirm the guess | `328:1437` | `328:1455` | Artifact Tag, Callout, Button |
 | R04 Receiver · radar request | `268:1172` | `268:1183` | Avatar, Callout, Button |
 | R04b Receiver · radar full | `287:1308` | `287:1319` | Avatar, Callout, Button |
 
@@ -155,6 +154,8 @@ Columns: screen, node ID, note ID, components used. Status Bar is on every scree
 | 12g Add friends | `283:2760` | `283:2777` | Chip, Callout, Contact Row, Button |
 | 12h Remove from radar | `283:2839` | `283:2858` | Contact Row, Button, Dialog |
 | 12i Edit profile | `330:1638` | `330:1657` | Avatar, Chip, Input, Button |
+| 12j Delete account | `367:5841` | `367:5796` (group) | Button |
+| 12k Delete account · code | `367:5925` | `367:5880` (group) | Code Cell, Button, System / Keyboard |
 | 13 Armory | `8:425` | `13:476` | Tab Bar |
 | 13b Armory · Shield applied | `103:417` | `104:782` | Tab Bar, Toast |
 
@@ -204,7 +205,7 @@ From the prototype's connections. Steps marked "auto" and taps on a whole screen
 Sign-up
 A00 auto→ A01
 A01 Get started→ A02 · I already have an account→ L01
-A02 Continue→ A02a · A02a Continue→ A02b · A02b Looks good / Skip for now→ A03 · A03 Duel→ A04 · A04 Let's Go→ A05
+A02 Continue→ A02a · A02a Continue→ A02b · A02b Looks good / Skip for now→ A03 · A03 Duel→ A04 · Hit→ A04b · A04 Let's Go→ A05
 A05 Send code→ A06 · A06 Verify→ A07 · A07 Continue→ A09
 A09 Sync contacts→ A11 · Add numbers manually→ A11b→ A12
 A11 Continue→ A12
@@ -228,7 +229,7 @@ Receiver
 R02 Allow & duel→ 07a · Continue without recording→ 07a (no recording)→ 07b→ 11
 07a auto→ 07 · 07 call ends→ 08
 08 Replay duel→ 08b · 08b Back→ 08
-R03 Send reason (−5) / Skip (−10)→ 10 · Other…→ R03b → R03c (if the caller typed a guess) → 10
+R03 Send reason (−5) / Skip (−10)→ 10 · Other…→ R03b → 10 (the app matches a typed guess itself)
 10 Plan revenge→ S01
 09 Share the evidence / Back to Arena→ 11
 
@@ -237,8 +238,8 @@ C02 → C07 · C07 Post it→ 11 · Keep private→ 11c
 C03 Try again→ C02 · C04 Remind me at 6→ C02 · C05 Try later→ C02
 
 Log in
-L01 Send code→ L02 · L02 Log in→ L03 · Wrong number?→ L01
-L03 Back to the Arena→ 11
+L01 Send code→ L02 · L02 Log in→ L03 (the Arena, with "While you were gone" on top) · Wrong number?→ L01
+L03 is the Arena, so its tab bar and cards work like 11
 L04 Create an account→ A02 · Try another number→ L01
 
 Invited (not in the prototype, see the flow diagram)
@@ -262,6 +263,8 @@ S01 Sneak Maya→ C06 → C01 → C02 (no filter step, default already on) · Ca
 At 10 of 10: 12f Review→ R04b · R04b Manage radar / Not now→ 12f
 12f Remove→ 12h · 12h Keep / Remove→ 12f
 12 Edit profile→ 12i · 12i Save / Profile→ 12
+12 / 12c / 12d Delete account→ 12j · 12j Send me a code→ 12k · Keep my account / ‹ Profile→ 12
+12k Delete my account→ A00 · ‹ Delete account→ 12j
 12f Add more friends→ 12g · 12g Done / Radar→ 12f
 12c Trophy shelf→ 12e
 ```

@@ -64,7 +64,9 @@ Most Wanted is earned with 3 kills in a row.
 
 ### Power-ups (points per use)
 
-Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-second ring). Applying one shows a toast.
+Incognito 5 · Custom ringtone 3 · Shield 5 · Faster Sneak 5 (5-second ring). Applying one shows a toast.
+
+Filters are free, every time, and aren't a power-up.
 
 ### The sneak, in order
 
@@ -79,7 +81,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 ### Duels
 
 - **Layout:** receiver on top, caller below, in calls, posts and every export.
-- **Start:** a "Duel starts in 10s" countdown runs first. After that, the only tag is REC, if recording.
+- **Start:** the duel and the recording start at pick-up. The first 10 seconds show just a counter, with no "Duel starts in" label, because it's part of the recording. REC shows from pick-up, if recording.
 - **Recording:** the caller allows it before the ring, and the receiver right after picking up. Without it, the call still goes ahead, with no REC tag, no duel to post and no duel points.
 - **Receiver notice:** the incoming screen says their video shows as soon as they tap Duel.
 - **Replay:** Replay duel opens 08b full screen, with a back button to the post screen.
@@ -87,7 +89,7 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 
 ### Video shape
 
-- **In the app:** the Arena card is full width at 9:16, like a feed, with time left and Save on the video. 08 uses the full width. Video is cropped to fill with faces kept in view, never stretched.
+- **In the app:** the Arena card is full width at 9:16, like a feed. The names sit on the video, top left in white, with time left and Save along the bottom of the video. On 08 the preview fills most of the screen. Video is cropped to fill with faces kept in view, never stretched.
 - **Downloads:** 9:16, for Reels, TikTok and Shorts (11b). The white watermark appears on downloads only.
 
 ### Access and limits
@@ -98,14 +100,18 @@ Incognito 5 · Custom ringtone 3 · Shield 5 · Filters 3 · Faster Sneak 5 (5-s
 - Manage your radar in Profile › Radar (12f): answer requests, remove friends (12h) and add more (12g).
 - At 10 of 10, you can't accept a request (R04b) or add and invite anyone until you remove someone. Requests stay pending.
 - A radar holds up to 10 friends, counting only accepted friends. Requests and invites don't use a spot until accepted, and there's no weekly limit.
-- During a do-not-disturb window, nobody can sneak you and you can't sneak anyone.
+- During a do-not-disturb window, nobody can sneak you and you can't sneak anyone. Quick pauses are 1 to 5 hours.
+- **Log in:** lands in the Arena (L03), with "While you were gone" at the top. There's no welcome screen.
+- **Demo sneak (A03):** looks like a real incoming sneak (06), with Hit and Duel. Practice only, no points.
+- **Settings:** no Purge window setting, because a Purge is always hidden, and no Notifications setting for now.
+- **Delete account:** Profile › Delete account (12j) sends an SMS code, entered on 12k. Deleting returns to the start (A00).
 - **Username:** asked after the name (A02a). Suggested from the name and checked live: unique, 3 to 20 characters, letters, numbers, dots and underscores. A taken name shows suggestions and disables Continue. Same rules in Profile (12i).
 - **Back navigation:** every second-layer screen has a back link at the top left, such as "‹ Profile" or "‹ Radar".
 - **Feed wording:** a missed sneak is always "X got Y", with the excuse if one was given. Never "Y hit X's sneak".
 - **Requests banner:** "Someone saved you a spot on their radar" for one, "N people saved you a spot on their radar" for more. No names.
 - **Empty Arena (11e):** shown when there are no duels, posts or requests.
 - **Profile photo:** asked after the name (A02b, B02b), skippable, and editable in Profile (12i). Used on sneaks, the wanted poster and share cards.
-- **Typed guesses:** both sides can type with Other…. A typed guess is confirmed by the receiver (R03c); chip guesses are matched automatically.
+- **Typed guesses:** both sides can type with Other…. The app compares the guess with the reason and decides if it was right, for chips and typed text alike. Nobody confirms it.
 - Every downloadable artefact carries a Sneak branding hook, for people who don't have the app.
 
 ### Invites
@@ -124,15 +130,11 @@ Check with design before building these.
 | Does joining from an invite count as accepting? | B10, B12 | Yes, the inviter is on your radar straight away |
 | Is removing someone silent and two-way? | 12h | Yes to both |
 | Does removing someone cancel a running Vendetta? | 12h | Not defined |
-| Does a default filter keep costing 3 points per sneak? | C08, S01 | Yes, and None if you can't afford it |
-| What does changing the filter during a duel cost? | 07c | Nothing extra once paid on that sneak. If none was added, 3 points or first one free |
 | Does a closed beta need a screen for entering a beta code? | Sign-up | Not drawn |
 | Does surviving an invite earn points, and does the inviter get +10 for a hit? | B07, B08b | No points for surviving, +10 for the inviter |
 | Random duel topic (07d): keep it? | 07 | Exploration only |
 | What happens when the decision timer on the post screen reaches zero? | 08 | Not defined |
-| Is the first filter free? | A14, B14 | Free, then 3 per use (a proposal) |
 | Does the filter land on the receiver or the caller? | Ringing, 06, 07 | Receiver, with the caller previewing it |
-| What shows when Filters wasn't added? | Ringing | Not drawn. The assumption is no picker |
 | Do Vendetta, Purge and Most Wanted stack? Whose Purge window counts, and is it visible? | Scoring | Not defined |
 | Does a duel end a Most Wanted run, or only a kill? | Most Wanted | Not defined |
 | Do hits count with the phone off, no signal or while driving? | Hit | Not defined |

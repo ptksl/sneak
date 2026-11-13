@@ -4,7 +4,7 @@
 
 ---
 
-## Decisions so far (updated 6 Nov 2026)
+## Decisions so far (updated 13 Nov 2026)
 
 - **Closed beta:** launch uses beta codes, so the waitlist map is archived. Whether sign-up needs a code screen isn't decided.
 - **Scouting:** removed.
@@ -16,7 +16,13 @@
 - **Radar screen:** in Profile, for answering requests, removing friends and adding more.
 - **Filters (locked 12 Nov 2026):** five to start: Fisheye, Clown, Thermal, Bobblehead, Old age.
 - **Profile photo:** added after the name in sign-up, skippable, editable in Profile.
-- **Typed guesses:** the receiver confirms them.
+- **Typed guesses:** the app compares the caller's guess with the receiver's reason and decides if it was right. Nobody confirms it.
+- **Filters are free:** not a power-up, no points, every time.
+- **Log in:** lands straight in the Arena, with "While you were gone" at the top. No welcome screen.
+- **Demo sneak (A03):** looks like a real incoming sneak, with Hit and Duel.
+- **Do not disturb:** quick pauses of 1 to 5 hours.
+- **Settings:** no Purge window (a Purge is always hidden) and no Notifications row for now. Delete account needs an SMS code.
+- **Duel counter:** the duel and recording start at pick-up, so the first 10 seconds show just a counter, no "Duel starts in".
 - **Default filter:** set once on the first sneak or in Profile, so later sneaks skip that step. It can still be changed while ringing, and by the caller during the duel.
 - **Replay:** opens the duel full screen with a back button.
 - **Copy:** "Look alive." uses the italic Wink style. Losing reads "you got hit".
@@ -33,12 +39,12 @@
 - **Duel / Hit:** the incoming buttons are labelled Duel (pick up) and Hit (reject). A Hit is −10, or −5 if the receiver gives a reason; the −5 is only explained on the reason screen. Before it rings, the caller can optionally guess what the person is doing; a right guess doubles their points and creates a "caught out" post ("Maya was in the shower when you sneaked on them").
 - **Sneak setup order:** pick a person, add power-ups, optional guess, record permission, filter if no default is set, then it rings.
 - **Ringing screen:** countdown on the top half and the caller's camera on the bottom, like the duel layout. Your filter (None, Fisheye, Clown, Thermal) is already on and can be changed here. It previews on their video and lands on the receiver at pick-up. The first filter is free (a proposal, not yet confirmed).
-- **Duel start:** a "Duel starts in 10s" countdown replaces the Duel Locked tag, on both the core and invited paths. After that, the only tag is REC, if recording.
+- **Duel start:** the duel starts at pick-up. A 10-second counter shows first, with no label, on both the core and invited paths. REC shows from pick-up, if recording.
 - **Recording permission:** the caller allows recording before the ring; the receiver allows it right after picking up. Continue without recording still goes ahead, with no REC tag, no duel to post and no duel points.
 - **Artifacts:** Kill is a skull in crosshairs, Hit an impact burst, Vendetta a dagger, Most Wanted a sheriff star, used on tags, Arena cards, result screens and trophies.
 - **Watermark:** white, on downloads only, with no options to set.
 - **Sign-in:** "I already have an account" goes number, code, welcome back, Arena. Add your friends is one step, combining invites and friends on Sneak, with a progress bar through First sneak.
-- **Power-ups (per use):** Incognito 5, Custom ringtone 3, Shield 5, Filters 3, Faster Sneak 5 (5-second ring). Applying one shows a toast.
+- **Power-ups (per use):** Incognito 5, Custom ringtone 3, Shield 5, Faster Sneak 5 (5-second ring). Applying one shows a toast. Filters are free and aren't a power-up.
 - **Blackbox audio:** removed.
 - **Vendetta:** its own indigo colour; Kill is green, Hit is red.
 - **First hit is free:** shown as "Immunity".
